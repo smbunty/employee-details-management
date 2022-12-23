@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <h1><i> my life style converting my samane</i></h1>
+    <form action='/analize' method='post'>{% csrf_token %}
+        <textarea name='text' style="width: 1203px; height: 140px;">
+        </textarea>
+        <input type="checkbox" name="removepunc">remove punctuations
+        <button type="submit"> analyze</button><br>
+        <input type="checkbox" name="fullcaps">fulllcaps
+        <button type="submit"> fullcaps</button><br>
+        <input type="checkbox" name="extraspaceremover">remove extraspaceremover
+        <button type="submit">extraspaceremover </button><br>
+        <input type="checkbox" name="newlineremover">newlineremover
+        <button type="submit"> newline remover</button><br>
+        <input type="checkbox" name="charcount">charcount
+        <button type="submit"> charcount</button>
+    </form>
+  
+   <!-- my name is {{name}} i am from {{place}}  -->
+
+</body>
+</html>
